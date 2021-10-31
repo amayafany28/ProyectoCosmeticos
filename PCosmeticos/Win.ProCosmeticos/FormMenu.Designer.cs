@@ -71,6 +71,7 @@
             // 
             this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loginToolStripMenuItem});
+            this.seguridadToolStripMenuItem.ForeColor = System.Drawing.Color.MediumBlue;
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.seguridadToolStripMenuItem.Text = "Seguridad";
@@ -78,7 +79,7 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
@@ -223,8 +224,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(600, 327);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMenu";
