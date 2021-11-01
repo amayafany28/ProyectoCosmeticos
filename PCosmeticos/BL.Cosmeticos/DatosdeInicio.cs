@@ -2,7 +2,7 @@
 
 namespace BL.Cosmeticos
 {
-    internal class DatosInicio : IDatabaseInitializer<object>
+    internal class DatosdeInicio : IDatabaseInitializer<object>
     {
     }
 }

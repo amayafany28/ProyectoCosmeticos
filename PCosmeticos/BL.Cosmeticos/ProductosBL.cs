@@ -10,12 +10,12 @@ namespace BL.Cosmeticos
 {
    public class ProductosBL
     {
-        Contextoproducto _contexto;
+        Contexto _contexto;
         public BindingList<Producto> ListaProductos { get; set; }
 
         public ProductosBL()
         {
-            _contexto = new Contextoproducto();
+            _contexto = new Contexto();
             ListaProductos = new BindingList<Producto>();
             
         }
@@ -96,6 +96,8 @@ namespace BL.Cosmeticos
         public int Existencia { get; set; }
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
+        public int TipoId { get; set; }
+        public Tipo Tipo { get; set; }
         public byte[] Foto { get; set; }
         public bool Activo { get; set; }
 
