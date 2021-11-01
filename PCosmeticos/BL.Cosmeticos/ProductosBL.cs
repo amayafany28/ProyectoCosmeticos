@@ -94,8 +94,15 @@ namespace BL.Cosmeticos
         public string Descripcion { get; set; }
         public double Precio { get; set; }
         public int Existencia { get; set; }
+        public int CategoriaId { get; set; }
+        public Categoria Categoria { get; set; }
         public byte[] Foto { get; set; }
         public bool Activo { get; set; }
+
+        public Producto()
+        {
+            Activo = true;
+        }
 
     }
 
