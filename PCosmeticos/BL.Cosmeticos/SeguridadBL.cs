@@ -17,7 +17,7 @@ namespace BL.Cosmeticos
             }
             else
             {
-                if (usuario == "DanielZelaya" && contrasena == "Cosmeticoszare")
+                if (usuario == "DanielZelaya" && contrasena == "123")
                 {
                     return true;
                 }

@@ -69,5 +69,15 @@ namespace Win.ProCosmeticos.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_10_05_at_11_07_37_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-10-05 at 11.07.37 AM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

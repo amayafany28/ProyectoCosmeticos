@@ -45,14 +45,7 @@ namespace Win.ProCosmeticos
             formMaquillaje.Show();
         }
 
-        private void setDeBrochasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var formBrochas = new FormBrochas();
-            formBrochas.MdiParent = this;
-            formBrochas.Show();
-
-        }
-
+        
         private void esponjasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var formEsponjas = new FormEsponjas();
@@ -115,6 +108,11 @@ namespace Win.ProCosmeticos
             var reporteClientes = new ReporteClientes();
             reporteClientes.MdiParent = this;
             reporteClientes.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     }
