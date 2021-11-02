@@ -15,11 +15,26 @@ namespace Win.ProCosmeticos
     public partial class FormProductos : Form
     {
         ProductosBL _productos;
+        TiposBL _tiposBL;
+        CategoriasBL _categoriasBL;
+
+
+  
         public FormProductos()
         {
             InitializeComponent();
             _productos = new ProductosBL();
             listaProductosBindingSource.DataSource = _productos.ObtenerProductos();
+
+            _categoriasBL = new CategoriasBL();
+            listaCategoriasBindingSource.DataSource = _categoriasBL.ObtenerCategorias();
+    
+         
+
+            _tiposBL = new TiposBL();
+            listaTiposBindingSource.DataSource = _tiposBL.ObtenerTipos();
+
+
         }
 
         private void listaProductosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

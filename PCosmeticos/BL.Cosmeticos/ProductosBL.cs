@@ -32,11 +32,12 @@ namespace BL.Cosmeticos
         {
             var resultado = Validar(producto);
             if(resultado.Exitoso == false)
+
             {
                 return resultado;
             }
 
-            _contexto.SaveChanges(); 
+            _contexto.SaveChanges();
 
             resultado.Exitoso = true;
             return resultado;
@@ -84,8 +85,18 @@ namespace BL.Cosmeticos
                 resultado.Mensaje = "El precio debe ser mayor que cero";
                 resultado.Exitoso = false;
             }
+            if (producto.TipoId == 0)
+            {
+                resultado.Mensaje = "Por Favor, Seleccione un tipo";
+                resultado.Exitoso = false;
+            }
+            if (producto.CategoriaId == 0)
+            {
+                resultado.Mensaje = "Por Favor, Seleccione una categoria";
+                resultado.Exitoso = false;
+            }
 
-            return resultado;
+                return resultado;
         }
     }
     public class Producto
