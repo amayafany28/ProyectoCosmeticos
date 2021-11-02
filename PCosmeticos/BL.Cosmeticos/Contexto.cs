@@ -20,6 +20,7 @@ namespace BL.Cosmeticos
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
         public static object Usuarios { get; internal set; }
+        public object Usuario { get; internal set; }
     }
 
 }
