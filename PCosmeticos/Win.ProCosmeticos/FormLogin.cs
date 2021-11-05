@@ -37,7 +37,7 @@ namespace Win.ProCosmeticos
             contrasena = textBox2.Text;
 
             button1.Enabled = false;
-            button2.Text = "Verificando.....";
+            button1.Text = "Verificando.....";
             Application.DoEvents();
 
 
@@ -51,9 +51,13 @@ namespace Win.ProCosmeticos
                 MessageBox.Show("Bienvenidos a Cosmeticos Zare");
             }
             else
+            {
                 MessageBox.Show("Usuario o Contraseña Incorrecta, Ingrese los datos nuevamente");
+            }
+            button1.Enabled = true;
+            button1.Text = "Aceptar";
 
-         }
+        }
         
 
 
@@ -63,6 +67,11 @@ namespace Win.ProCosmeticos
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

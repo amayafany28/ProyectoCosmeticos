@@ -167,13 +167,24 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Categoria.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.CategoriasBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Cliente.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.ClientesBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Contexto.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.DatosdeInicio.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.Esponja.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.EsponjasBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.MaquillajeBL+Maquillaje.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.MaquillajeBL+Resultado.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.MaquillajeBL.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.Producto.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.ProductosBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Resultad.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Resultado.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.SeguridadBL+Usuario.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.SeguridadBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Tipo.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.TiposBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -200,6 +211,7 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2021-10-05 at 11.07.37 AM.jpeg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

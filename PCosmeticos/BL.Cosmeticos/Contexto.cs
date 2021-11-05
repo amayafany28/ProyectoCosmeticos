@@ -12,7 +12,6 @@ namespace BL.Cosmeticos
 {
     public class Contexto: DbContext 
     {
-        internal object Usuario;
 
         public Contexto(): base("Productos Faciales")
         {

@@ -14,8 +14,8 @@ namespace BL.Cosmeticos
 
         {
             var usuarioAdmin = new Usuario();
-            usuarioAdmin.Nombre = "FanyAmaya";
-            usuarioAdmin.Contrasena = "Cosmeticoszare";
+            usuarioAdmin.Nombre = "admin";
+            usuarioAdmin.Contrasena = "123";
 
             contexto.Usuarios.Add(usuarioAdmin);
 
