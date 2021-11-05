@@ -70,7 +70,7 @@ namespace Win.ProCosmeticos
 
         private void nombreDelClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var nombreClientes = new NombreClientes();
+            var nombreClientes = new FormClientes();
             nombreClientes.MdiParent = this;
             nombreClientes.Show();
         }

@@ -1,4 +1,10 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static BL.Cosmeticos.SeguridadBL;
 
 namespace BL.Cosmeticos
 {
@@ -7,8 +13,12 @@ namespace BL.Cosmeticos
         protected override void Seed(Contexto contexto)
 
         {
-           
-           
+            var usuarioAdmin = new Usuario();
+            usuarioAdmin.Nombre = "FanyAmaya";
+            usuarioAdmin.Contrasena = "Cosmeticoszare";
+
+            contexto.Usuarios.Add(usuarioAdmin);
+
 
             var categoria1 = new Categoria();
             categoria1.Descripcion = "Cremas";

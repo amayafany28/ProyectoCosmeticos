@@ -1,6 +1,8 @@
-﻿namespace Win.ProCosmeticos
+﻿using System;
+
+namespace Win.ProCosmeticos
 {
-    partial class NombreClientes
+    partial class FormClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +30,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // DatosClientes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "NombreClientes";
+            this.ClientSize = new System.Drawing.Size(507, 253);
+            this.Name = "DatosClientes";
+            this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.FormClientes_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void FormClientes_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

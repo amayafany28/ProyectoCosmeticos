@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Cosmeticos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,18 @@ using System.Windows.Forms;
 
 namespace Win.ProCosmeticos
 {
-    public partial class NombreClientes : Form
+    public partial class FormClientes : Form
     {
-        public NombreClientes()
+        ClientesBL _clientes; 
+
+        public FormClientes()
         {
             InitializeComponent();
+
+            _clientes = new ClientesBL();
+            
         }
+
+       
     }
 }

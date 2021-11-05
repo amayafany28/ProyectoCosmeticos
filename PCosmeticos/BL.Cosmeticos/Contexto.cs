@@ -1,10 +1,19 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static BL.Cosmeticos.SeguridadBL;
+
 
 namespace BL.Cosmeticos
 {
     public class Contexto: DbContext 
     {
+        internal object Usuario;
+
         public Contexto(): base("Productos Faciales")
         {
 
@@ -19,8 +28,8 @@ namespace BL.Cosmeticos
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
-        public static object Usuarios { get; internal set; }
-        public object Usuario { get; internal set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
     }
 
 }
