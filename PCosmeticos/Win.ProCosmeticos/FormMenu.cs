@@ -63,14 +63,14 @@ namespace Win.ProCosmeticos
 
         private void idDeClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var idClintes = new IdClientes ();
+            var idClintes = new Clientes ();
             idClintes.MdiParent = this;
             idClintes.Show();
         }
 
         private void nombreDelClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var nombreClientes = new FormClientes();
+            var nombreClientes = new Clientes();
             nombreClientes.MdiParent = this;
             nombreClientes.Show();
         }
@@ -113,6 +113,11 @@ namespace Win.ProCosmeticos
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

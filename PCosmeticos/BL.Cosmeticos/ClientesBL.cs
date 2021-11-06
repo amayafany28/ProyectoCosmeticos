@@ -34,6 +34,32 @@ namespace BL.Cosmeticos
         {
             return ListaClientes;
         }
+        public bool GuardarCliente(Cliente cliente)
+        {
+            if (cliente.Id == 0)
+            {
+                cliente.Id = ListaClientes.Max(item => item.Id) + 1;
+            }
+            return true;
+        }
+        public void AgregarCliente()
+        {
+            var nuevoCliente = new Cliente();
+            ListaClientes.Add(nuevoCliente);
+        }
+        public bool EliminarCliente(int id)
+        {
+            foreach (var cliente in ListaClientes)
+            {
+                if (cliente.Id == id)
+                {
+                    ListaClientes.Remove(cliente);
+                    return true;
+                }
+
+            }
+            return false;
+        }
     }
     public class Cliente
     {
